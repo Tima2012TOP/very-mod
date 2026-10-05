@@ -1,0 +1,15 @@
+{
+	"$schema": "https://raw.githubusercontent.com/geode-sdk/geode/main/entry/schemas/mod.json",
+	"geode": "5.0.0",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"version": "1.0.0",
+	"id": "developer.verity_level_replacer",
+	"name": "Verity Level Replacer",
+	"developer": "developer",
+	"description": "Replaces any loaded level data with the Verity level structure in Geometry Dash 2.2081."
+}
