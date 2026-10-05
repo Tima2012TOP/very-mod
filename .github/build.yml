@@ -1,0 +1,21 @@
+name: Build Geode Mod
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Geode CLI
+        uses: geode-sdk/install-geode-cli@main
+        
+      - name: Build Mod
+        run: geode build
+        
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled-mod
+          path: build/*.geode
